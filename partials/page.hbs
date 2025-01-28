@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en" dir="ltr"
+      prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>{{browserTitle title}}</title>
+    <meta name="description" content="{{description}}"/>
+
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="/open-graph.png?make-absolute">
+    <meta property="og:url" content="https://markpeaks.com{{url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mark Peaks">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link rel="canonical" href="https://markpeaks.com{{url}}">
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <a href="/">Mark Peaks</a>
+</header>
+
+<main>
+    {{{block "main"}}}
+</main>
+
+<footer>
+    <a href="/legal">Legal</a>
+</footer>
+
+</body>
+
+</html>

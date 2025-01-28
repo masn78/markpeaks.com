@@ -1,0 +1,7 @@
+name = "markpeaks-com"
+pages_build_output_dir = "./build"
+compatibility_date = "2025-01-28"
+compatibility_flags = ["nodejs_compat"]
+
+[dev]
+local_protocol = "https"

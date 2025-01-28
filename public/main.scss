@@ -1,0 +1,274 @@
+// region Fuentes.
+$font-family: Verdana, Helvetica, Arial, sans-serif;
+
+$medium-font-weight: 400;
+$black-font-weight: 700;
+// endregion
+
+// region Colores.
+$background: #fff;
+$button-background: darkgreen;
+$button-background-disabled: #999;
+
+$color: #000;
+$button-color: #fff;
+$link-color: #06c;
+$link-hover-color: #000;
+$link-visited-color: #60c;
+
+// endregion
+
+// region Vistas.
+$small-width: 480px;
+$large-width: 768px;
+
+$content-width: 90vw;
+$max-content-width: 75ch;
+// endregion
+
+// region Estilos básicos.
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, body, ul, ol, li, h1, h2, h3, p, figure, form, input, button, select {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: $background;
+  color: $color;
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: $medium-font-weight;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+  max-width: $max-content-width;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $black-font-weight;
+  line-height: 1.2;
+  margin: 2em 0 .5em 0;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $link-hover-color;
+}
+
+a:visited {
+  color: $link-visited-color;
+}
+
+b,
+strong {
+  font-weight: $black-font-weight;
+}
+
+cite {
+  font-style: normal;
+}
+
+button,
+input,
+select {
+  font-family: $font-family;
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+li,
+p,
+.control {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ol,
+ul {
+  margin-left: 2em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// endregion
+
+// region Botones
+button,
+input[type=button],
+input[type=submit] {
+  background-color: $button-background;
+  border: 0;
+  border-radius: 0;
+  color: $button-color;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+}
+
+// endregion
+
+// region Controles de entrada
+.control {
+  label {
+    display: block;
+    font-weight: $medium-font-weight;
+    margin-bottom: 0.25em;
+  }
+
+  input[type=email] {
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 0;
+    padding: 0.5em;
+    width: 100%;
+  }
+}
+
+.control.checkbox {
+  display: flex;
+  align-items: flex-start;
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .label-wrapper {
+    margin-left: 0.5em;
+  }
+}
+
+// endregion
+
+// region Encabezado y pié de página
+header,
+footer {
+  a,
+  a:hover,
+  a:visited {
+    color: $color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  margin-bottom: 3em;
+
+  a {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: .5em solid palegreen;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+
+  font-size: 0.8rem;
+}
+
+// endregion
+
+// region Página de inicio
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+}
+
+.portrait {
+  width: 150px;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagline {
+  font-weight: $black-font-weight;
+  line-height: 1.2;
+  font-size: 1.4em;
+}
+
+// endregion
+
+// region Formulario de suscripción
+.sign-up-form {
+  max-width: 50ch;
+  margin: 1em auto;
+  padding: 0 1em;
+  border: 1px solid palegreen;
+  background: palegreen;
+}
+
+// endregion
