@@ -8,8 +8,7 @@ export async function onRequestPost(context) {
     const email = (await context.request.formData()).get("email");
 
     const response = await fetch(
-        "https://connect.mailerlite.com/api/subscribers",
-        {
+        "https://connect.mailerlite.com/api/subscribers", {
             method: "POST",
             headers: {
                 Authorization: `Bearer ${context.env.MAILERLITE_TOKEN}`,
@@ -22,8 +21,8 @@ export async function onRequestPost(context) {
         });
 
     const redirectMap = {
-        200: "/ya-suscrito",
-        201: "/suscripcion-confirmada",
+        200: "/already-subscribed",
+        201: "/subscription-confirmed",
     };
 
     return Response.redirect(new URL(redirectMap[response.status] || "/error", context.request.url), 302);

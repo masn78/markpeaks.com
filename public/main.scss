@@ -7,7 +7,7 @@ $black-font-weight: 700;
 
 // region Colores.
 $background: #fff;
-$button-background: darkgreen;
+$button-background: indigo;
 $button-background-disabled: #999;
 
 $color: #000;
@@ -220,7 +220,7 @@ header {
   a {
     font-weight: bold;
     font-size: 20px;
-    border-bottom: .5em solid palegreen;
+    border-bottom: .5em solid plum;
   }
 
   a:hover {
@@ -267,8 +267,8 @@ footer {
   max-width: 50ch;
   margin: 1em auto;
   padding: 0 1em;
-  border: 1px solid palegreen;
-  background: palegreen;
+  border: 1px solid plum;
+  background: plum;
 }
 
 // endregion
