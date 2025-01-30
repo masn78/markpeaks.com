@@ -63,7 +63,7 @@ const revAssets = () =>
 
 const makeAbsoluteUrls = () =>
     src("build/**/*.html")
-        .pipe(replace(/"([^"]*)\?make-absolute"/g, "\"https://marcosanchez.es$1\""))
+        .pipe(replace(/"([^"]*)\?make-absolute"/g, "\"https://markpeaks.com$1\""))
         .pipe(dest("build"));
 
 export const build =
