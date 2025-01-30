@@ -71,10 +71,12 @@ h3 {
 
 h1 {
   font-size: 1.6em;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.4em;
+  text-align: center;
 }
 
 h3 {
@@ -217,10 +219,10 @@ footer {
 header {
   margin-bottom: 3em;
 
-  a {
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: .5em solid plum;
+  text-align: center;
+
+  svg {
+    height: 2rem;
   }
 
   a:hover {

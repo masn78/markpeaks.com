@@ -1,5 +1,6 @@
 import {dest, parallel, series, src} from "gulp";
 import {deleteAsync} from "del";
+import embedSvg from "gulp-embed-svg";
 import gulpSass from "gulp-sass";
 import hb from "gulp-hb";
 import htmlMin from "gulp-htmlmin";
@@ -26,6 +27,10 @@ const buildHtml = () =>
             .helpers(hbHelpers)
             .helpers(layouts)
             .partials("partials/**/*.hbs"))
+        .pipe(embedSvg({
+            root: "./media/",
+            xmlMode: false
+        }))
         .pipe(htmlMin({
             collapseBooleanAttributes: true,
             collapseWhitespace: true,

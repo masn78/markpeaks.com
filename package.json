@@ -3,6 +3,7 @@
   "devDependencies": {
     "del": "^7.1.0",
     "gulp": "^5.0.0",
+    "gulp-embed-svg": "^1.4.12",
     "gulp-hb": "^8.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-rename": "^2.0.0",
@@ -15,7 +16,7 @@
     "handlebars-layouts": "^3.1.4",
     "sass": "^1.77.3",
     "uglify-js": "^3.19.3",
-    "wrangler": "^3.78.7"
+    "wrangler": "^3.106.0"
   },
   "dependencies": {
   },
