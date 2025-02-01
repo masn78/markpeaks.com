@@ -6,12 +6,11 @@ $black-font-weight: 700;
 // endregion
 
 // region Colores.
-$background: #fff;
-$button-background: indigo;
-$button-background-disabled: #999;
+$background: indigo;
+$button-background: white;
 
-$color: #000;
-$button-color: #fff;
+$color: #fff;
+$button-color: indigo;
 $link-color: #06c;
 $link-hover-color: #000;
 $link-visited-color: #60c;
@@ -116,11 +115,6 @@ img {
   max-width: 100%;
   width: auto;
   height: auto;
-}
-
-figcaption {
-  font-size: 0.9em;
-  text-align: center;
 }
 
 li,
@@ -235,29 +229,6 @@ footer {
 // endregion
 
 // region Página de inicio
-.banner {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-
-}
-
-.portrait {
-  width: 150px;
-}
-
-.copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tagline {
-  font-weight: $black-font-weight;
-  line-height: 1.2;
-  font-size: 1.4em;
-}
-
 // endregion
 
 // region Formulario de suscripción
@@ -266,7 +237,6 @@ footer {
   margin: 1em auto;
   padding: 0 1em;
   border: 1px solid plum;
-  background: plum;
 }
 
 // endregion

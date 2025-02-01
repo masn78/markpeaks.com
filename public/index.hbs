@@ -8,8 +8,40 @@
         <h1 class="visually-hidden">Mark Peaks</h1>
 
         <h2>You don't want more outdoor gear</h2>
+        <p>What you want is to stand out and have a memorable experience out there.</p>
+        <p>Doesn't matter where you are. Doesn't matter what the weather's like.</p>
+        <p>By recommendation only.</p>
+        <p>If you're curious, join our list:</p>
 
-        {{#embed "sign-up-form" id="c1"}}{{/embed}}
+        <form class="sign-up-form" action="/subscribe" method="post">
+
+            <div class="control">
+                <label>
+                    Email
+                    <input name="email" type="email" maxlength="50" required>
+                </label>
+            </div>
+
+            <div class="control checkbox">
+                <div class="input-wrapper">
+                    <input id="consent" type="checkbox" required>
+                    &#8203; {{! Zero-width space }}
+                </div>
+                <div class="label-wrapper">
+                    <label for="consent">I consent to receive messages from Mark&nbsp;Peaks.</label>
+                </div>
+            </div>
+
+            <div class="control">
+                <button type="submit">Join now</button>
+            </div>
+
+            <p>
+                You can unsubscribe at any time.
+                Check our <a href="/legal">privacy policy</a> for more information.
+            </p>
+
+        </form>
 
     {{/content}}
 
