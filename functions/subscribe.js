@@ -1,11 +1,11 @@
 export async function onRequestPost(context) {
-    const LIKELY_HUMAN_SCORE_THRESHOLD = 30;
+    const formData = (await context.request.formData());
 
-    if (context.request.cf.botManagement.score < LIKELY_HUMAN_SCORE_THRESHOLD) {
+    // Si parece un bot, cancelamos la acción.
+    const LIKELY_HUMAN_SCORE_THRESHOLD = 30;
+    if (formData.get("name") !== "" || context.request.cf.botManagement.score < LIKELY_HUMAN_SCORE_THRESHOLD) {
         return new Response();
     }
-
-    const email = (await context.request.formData()).get("email");
 
     const response = await fetch(
         "https://connect.mailerlite.com/api/subscribers", {
@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                email,
+                email: formData.get("email"),
                 groups: [context.env.NEWSLETTER_GROUP_ID]
             })
         });

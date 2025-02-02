@@ -190,6 +190,10 @@ input[type=submit] {
   }
 }
 
+.control.honeypot {
+  display: none;
+}
+
 // endregion
 
 // region Encabezado y pié de página
